@@ -153,7 +153,7 @@ class Event {
     availability = parseStringToAvailability(json['availability']);
     status = parseStringToEventStatus(json['eventStatus']);
 
-    url = json['foundUrl'];
+    url = json['eventURL'];
 
     if (json['attendees'] != null) {
       attendees = json['attendees'].map<Attendee>((decodedAttendee) {
